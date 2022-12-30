@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+  position: absolute;
+  background-color: aqua;
+
+  /* width: 300px; */
+  height: 100vh;
+  font-family: "Alkalami", serif;
+  transition: transform 0.2s ease-in;
+}
+.sidebar nav {
+  padding: 36px;
+}
+.sidebar nav ul li {
+  list-style: none;
+  font-size: 36px;
+  padding: 4px 0px;
+}
+.sidebar nav ul li a:hover {
+  color: rgb(255, 0, 195);
+}
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.main {
+  /* background-color: yellow; */
+  color: black;
+  width: 90vw;
+}
+.container {
+  display: flex;
+}
+.infoContainer {
+  /* background-color: pink; */
+  color: black;
+  height: 60vh;
+  width: 70vw;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.devInfo {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  font-family: "Source Code Pro", monospace;
+}
+.hello {
+  font-size: 3em;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.about {
+  font-size: 2.5em;
+}
+.moreabout {
+  font-size: 2em;
+  font-family: "Alkalami", serif;
+  margin-top: 23px;
+}
+.buttons {
+  margin-top: 14px;
+  font-size: 16px;
+}
+.btn,
+.buttons button {
+  padding: 4px 10px;
+  border-radius: 22px;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 3 px 3px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: #e91e63;
+  background-color: white;
+}
+.devPic img {
+  height: 60vh;
+}
+.contactform {
+  padding: 123px 50px;
+  font-family: "Alkalami", serif;
+}
+.contactform h1 {
+  font-family: "Source Code Pro", monospace;
+  /* text-align: center; */
+  /* padding-bottom: 32px; */
+}
+.contactform form div {
+  padding: 2px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.contactform form div input {
+  width: 16vw;
+  border-radius: 5px;
+  /* border: 2px solid orange; */
+  padding: 4px 2px;
+  margin-top: 2px;
+}
+#emailHelp {
+  font-size: 10px;
+  color: midnightblue;
+  margin: 0px 6px;
+  padding: 3px 0 0 0;
+}
+#form-check {
+  flex-direction: row;
+}
+#form-check input {
+  width: 14px;
+  /* margin: 4px 0; */
+}
+.form-check-label {
+  padding-top: 9px;
+  padding-left: 5px;
+}
+.blogContainer h1 {
+  font-family: "Alkalami", serif;
+  margin: 20px;
+  font-weight: bolder;
+}
+.blogContainer {
+  margin: 0px 88px;
+}
+.blogItem {
+  margin: 20px;
+  font-family: "Alkalami", serif;
+}
+
+.blogItem p {
+  font-family: "Source Code Pro", monospace;
+}
+.btn-sm {
+  margin: 12px 0px;
+  padding: 2px;
+  border-radius: 6px;
+}
+.btn-sm:hover {
+  background-color: white;
+  color: black;
+}
+.intro {
+  margin: 44px 88px;
+}
+
+.intro h2 {
+  font-family: "Alkalami", serif;
+}
+.intro p {
+  font-family: "Source Code Pro", monospace;
+}
+.skillcontainer {
+  padding: 5px;
+}
+.skillItem {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+}
+.skill {
+  width: 300px;
+  height: 6px;
+  background-color: red;
+  border: 2px solid black;
+}
+.f75 {
+  width: 225px;
+}
+.f50 {
+  width: 150px;
+}
+.f25 {
+  width: 75px;
+}
+.sidebarGo {
+  transform: translate(-445px, 0px);
+  position: absolute;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+.cross {
+  margin-left: 205px;
+}
+
+@media (max-width: 1150px) {
+  .devPic {
+    display: none;
+  }
+
+  .intro,
+  .blogContainer,
+  .contactform {
+    margin: 40px 8px;
+    padding: 0%;
+  }
+  .devInfo{
+    font-size: 5px;
+ 
+  }
+  .buttons button{
+    font-size: 0.5em;
+  }
+}
+
+@media (max-width:768px){
+    .contactform form div input{
+        width:auto;
+    }
+}
